@@ -1,7 +1,6 @@
 # Triangle-rotations-Computer-Graphics
 My solution to Games101 HW1. 
-
-Eigen library. 
+![ezgif com-animated-gif-maker](https://github.com/user-attachments/assets/d23625ca-96fc-4602-9fac-43a360d33881)
 
 Press w and s to rotate triangle around axis [1, 1, 0]. 
 - This rotation is done with Rodrigues' rotation formula
@@ -9,6 +8,8 @@ Press w and s to rotate triangle around axis [1, 1, 0].
 Press a and d to rotate the triangle around axis z [0, 0, 1].
 
 The triangle's line is drawn with bresenham's line drawing algorithm. 
+
+Used Eigen library.
 
 The triangle is applied with
 MVP transformation
