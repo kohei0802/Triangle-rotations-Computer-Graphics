@@ -1,3 +1,0 @@
-/home/kohei/Downloads/Assignment1/Normal/build/CMakeFiles/Rasterizer.dir
-/home/kohei/Downloads/Assignment1/Normal/build/CMakeFiles/edit_cache.dir
-/home/kohei/Downloads/Assignment1/Normal/build/CMakeFiles/rebuild_cache.dir
