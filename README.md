@@ -1,5 +1,5 @@
 # Triangle-rotations-Computer-Graphics
-My solution to Games101 HW1.
+My solution to Games101 exercise 1
 
 ![ezgif com-animated-gif-maker](https://github.com/user-attachments/assets/d23625ca-96fc-4602-9fac-43a360d33881)
 
