@@ -11,8 +11,10 @@ Eigen::Matrix4f get_view_matrix(Eigen::Vector3f eye_pos)
     Eigen::Matrix4f view = Eigen::Matrix4f::Identity();
 
     Eigen::Matrix4f translate;
-    translate << 1, 0, 0, -eye_pos[0], 0, 1, 0, -eye_pos[1], 0, 0, 1,
-        -eye_pos[2], 0, 0, 0, 1;
+    translate << 1, 0, 0, -eye_pos[0]
+                , 0, 1, 0, -eye_pos[1]
+                , 0, 0, 1, -eye_pos[2]
+                , 0, 0, 0, 1;
 
     view = translate * view;
 
@@ -80,8 +82,8 @@ Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
     rodrigues += (1 - std::cos(angle)) * axis * axis.transpose();
 
     rodrigues += std::sin(angle) * (Eigen::Matrix3f() << 0, -1*axis.z(), axis.y(),
-                                    axis.z(), 0, -1*axis.x(), 
-                                    -1*axis.y(), axis.x(), 0).finished();
+                axis.z(), 0, -1*axis.x(), 
+                -1*axis.y(), axis.x(), 0).finished();
 
     model.block<3,3>(0,0) = rodrigues;
 
